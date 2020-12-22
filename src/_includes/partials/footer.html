@@ -1,9 +1,67 @@
-<footer class="{{ 'fixed' if path == 'home' }} bottom-0 text-center w-full py-4">
-    <small class="text-gray-500">Copyright ©
-        {{settings.name}}
-        2020. Made with ❤ by
-        <a href="{{settings.url}}" target="_blank" class="underline">{{settings.author}}</a>
-        •
-        <a href="https://github.com/surjithctly/neat-starter" class="underline" target="_blank" rel="noopener">View on Github</a>
-    </small>
+<footer class="bg-gray-200">
+    <div class="container mx-auto px-6 pt-10 pb-6">
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-1/4 text-center md:text-left">
+            <h5 class="uppercase mb-6 font-bold">Brit-Med</h5>
+            <ul class="mb-4">
+                <li class="mt-2">
+                    <a href="/providers/" class="hover:underline text-gray-600 hover:text-orange-500">Healthcare Providers</a>
+                </li>
+                <li class="mt-2">
+                    <a href="/contact/" class="hover:underline text-gray-600 hover:text-orange-500">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <h5 class="uppercase mb-6 font-bold">Legal</h5>
+                <ul class="mb-4 w-full md:w-1/2">
+                    <li class="mt-2">
+                    <a href="/legal/privacy-policy" class="hover:underline text-gray-600 hover:text-orange-500">Privacy Statement</a>
+                    </li>
+                    <li class="mt-2">
+                    <a href="/legal/health-and-safety-policy" class="hover:underline text-gray-600 hover:text-orange-500">Health & Safety policy</a>
+                    </li>
+                    <li class="mt-2">
+                    <a href="/legal/diversity-policy" class="hover:underline text-gray-600 hover:text-orange-500">Diversity & Inclusion policy</a>
+                    </li>
+                    <li class="mt-2">
+                    <a href="/legal/slavery-policy" class="hover:underline text-gray-600 hover:text-orange-500">Modern day slavery policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/4 text-center md:text-left social-footer">
+                <h5 class="uppercase mb-6 font-bold">Socials</h5>
+                <ul class="mb-4">
+                    <li class="display-in-block mr-4">
+                        <a href="https://www.facebook.com/HexHBrit" target="_blank"><img src="./../static/img/icons/facebook.svg" class="main-icon" /><img src="./../../static/img/icons/facebook-hover.svg" class="icon-hover"/></a>
+                    </li>
+                    <li class="display-in-block mr-4">
+                        <a href="https://twitter.com/britmedcom1" target="_blank"><img src="./../static/img/icons/twitter.svg" class="main-icon" /><img src="./../static/img/icons/twitter-hover.svg" class="icon-hover"/></a>
+                    </li>
+                    <li class="display-in-block mr-4">
+                        <a href="https://instagram.com/britmed1" target="_blank"><img src="./../static/img/icons/instagram.svg" class="main-icon" /><img src="./../static/img/icons/instagram-hover.svg" class="icon-hover"/></a>
+                    </li>
+                    <li class="display-in-block mr-4">
+                        <a href="https://www.linkedin.com/company/brit-med/" target="_blank"><img src="./../static/img/icons/linkedin.svg" class="main-icon"/><img src="./../static/img/icons/linkedin-hover.svg" class="icon-hover"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </footer>
+
+<div class="footer-wrapper">
+    <footer id="footer" class="footer bg-gray-400">
+        <div class="footer-inner container m-auto md:flex justify-between items-center px-6 py-10">
+            <p class="text-purple-900 pb-8 md:pb-0">Copyright 2020 HexTransforma Healthcare Ltd.</p>
+            <a class="border-none" href="https://www.ncsc.gov.uk/cyberessentials/overview" target="_blank">
+            <img style="width: 80px" src="https://www.brit-med.com/images/cyber-essentials.png" alt="cyber-essentials-logo" title="Cyber essentials logo" />
+            </a>
+        </div>
+    </footer>
+    <div class="flex items-center bg-gray-900 text-white text-center text-sm py-1">
+    <div class="container m-auto">
+        <em>We process personal data in compliance with GDPR</em>
+    </div>
+    </div>
+</div>

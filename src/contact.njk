@@ -1,0 +1,58 @@
+---
+layout: default
+meta_title: Contact Us
+meta_description: About page description
+body_class: contact
+title: Contact Us
+---
+
+<main id="main" class="main inner flex flex-1 flex-col py-10 lg:py-20 focus:outline-none" tabindex="-1">
+
+    <article id="container-centre" class="column centre flex-1">
+
+        <header>
+            <h1 class="page-title">{{ title }}</h1>
+        </header>
+
+        <div class="w-full flex flex-wrap">
+
+            <!-- Register Section -->
+            <div class="w-full md:w-1/2 flex flex-col">
+                <div class="contact-info pr-8">
+                    <p>Email: <i class="fa fa-envelope-o"></i> <a href="mailto:info@brit-med.com">info@brit-med.com</a></p>
+                </div>
+                {# <form class="form pr-8">
+
+                    <div class="row required">
+                        <label for="name">Name</label>
+                        <input class="input" id="name" type="text" name="name" autocomplete="name" required>
+                    </div>
+
+                    <div class="row required">
+                        <label for="email">Email</label>
+                        <input class="input" id="email" type="text" name="email" autocapitalize="off" autocomplete="email" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="message">Message</label>
+                        <textarea class="textarea" id="message" name="message"></textarea>
+                    </div>
+                 
+                    <div class="row">
+                        <button class="inline-block py-4 px-10 text-white font-bold bg-red-500 hover:bg-red-600" type="submit">Send</button>
+                    </div>
+
+                </form> #}
+            </div>
+
+            <!-- Image Section -->
+
+            <div class="w-1/2 shadow-2xl">
+                <img class="object-cover rounded w-full hidden md:block" src="../images/travel-image.jpg">
+            </div>
+        </div>
+
+
+    </article>
+
+</main>
