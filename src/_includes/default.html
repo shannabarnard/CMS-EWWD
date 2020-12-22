@@ -15,6 +15,18 @@
     {% if prism == true %}
       <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
     {% endif %}
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </head>
   <body>
     {% include "./partials/navbar.njk" %}
@@ -28,7 +40,7 @@
     {% if path == "home" %}
       <!-- Netlify Identity Widget -->
       <!-- Needed only if you are using Netlify Identity feature -->
-      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
 
   </body>
